@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<section class="calculator">
+    <div class="calculator-container">
+        <div class="calculator-wrapper">
+            <div class="calculator__title">
+                <h1>Калькулятор Spring</h1>
+            </div>
+            <form method="post" action="/ravno" class="calculator__form">
+                <input class="calculator__input" id="1" name="firstNumber" placeholder="Введите первое число" type="text">
+                <select name="action" id="3" class="calculator-select">
+                    <option class="calculator-select__item" value="+">+</option>
+                    <option class="calculator-select__item" value="-">-</option>
+                    <option class="calculator-select__item" value="/">/</option>
+                    <option class="calculator-select__item" value="*">*</option>
+                </select>
+                <input class="calculator__input" name="secondNumber" placeholder="Введите второе число" type="text">
+                <input class="calculator__button" type="submit" value="Посчитать">
+            </form>
+        </div>
+    </div>
+</section>
+</body>
+</html>

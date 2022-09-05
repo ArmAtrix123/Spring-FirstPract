@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Результат</title>
+</head>
+<body>
+<section class="calculator">
+    <div class="calculator-container">
+        <div class="calculator-wrapper">
+            <div class="calculator__title">
+                <p th:text="'Твой результат: ' + ${answer}"></p>
+            </div>
+            <button class="calculator__button">
+                <a class="calculator__a" href="/calc">Вернуться</a>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+</body>
+</html>
